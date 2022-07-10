@@ -40,7 +40,7 @@ export default function Home() {
         </div>
       </header>
     
-      <main className='grid place-items-center mt-[3rem]  flex-grow w-4/5'>
+      <form className='grid place-items-center mt-[3rem]  flex-grow w-full px-2'>
       <img 
        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
         alt="" />
@@ -58,7 +58,7 @@ export default function Home() {
         <button className='btn' onClick={search}>Google Search</button>
         <button className='btn'>I'm Feeling Lucky</button>
        </div>
-      </main>
+      </form>
  {/* footer */}
 
  <footer>
