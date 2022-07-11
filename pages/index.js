@@ -5,6 +5,7 @@ import {SearchIcon} from '@heroicons/react/outline'
 import { Footer } from '../components/Footer';
 import {CgMenuGridO} from 'react-icons/cg'
 import {useRouter} from 'next/router'
+import Image from 'next/image'
 
 export default function Home() {
   const searchInputRef = useRef(null)
@@ -41,7 +42,10 @@ export default function Home() {
       </header>
     
       <form className='grid place-items-center mt-[3rem]  flex-grow w-full px-2'>
-      <img 
+      <Image 
+      layout='fixed'
+     width='200px'
+     height='100px'
        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
         alt="" />
        <div className='w-full flex mt-5 hover:shadow-md
@@ -50,8 +54,11 @@ export default function Home() {
         {/* <SearchIcon/> */}
         <SearchIcon className='h-5 mr-3 text-gray-500 '/>
         <input type="text" className='focus:outline-none flex-grow 'ref={searchInputRef}/>
-        <img 
-         className='h-7 w-7 mr-3 cursor-pointer'
+        <Image 
+         layout='fixed'
+        width='20px'
+        height='20px'
+         className=' mr-3 cursor-pointer'
         src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/052018/untitled-1_63.png?VaW1bs_mipmverkoNocEJNL6BKTHYW.R&itok=ThO1Yh_H" alt="" />
        </div>
        <div className='flex flex-col w-1/2 space-y-2 justify-center mt-8 sm:flex-row sm:space-x-4  sm:space-y-0'>

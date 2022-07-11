@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import {MicrophoneIcon, SearchIcon, XIcon} from '@heroicons/react/solid';
 import { Avatar } from './Avatar';
 import { HeaderOptions } from './HeaderOptions';
+import Image from 'next/image'
 
 
 export const Header = () => {
@@ -18,10 +19,11 @@ export const Header = () => {
   return (
     <div className='sticky top-0 bg-white'>
      <div className='flex w-full p-6 items-center'>
-          <img 
-         width={100}
+          <Image
+          layout='fixed'
+          width='100px'
+          height='50px'
          onClick={()=> router.push("/")}
-         height={0}
          className="cursor-pointer h-8"
        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
         alt="" />
